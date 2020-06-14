@@ -13,7 +13,7 @@ export default function manageRestaurants(state = {restaurants: [], reviews: []}
     return {...state, restaurants}
     
   case 'ADD_REVIEW':
-    const review = {restaurantId: cuidFn, id: Math.random(), text: action.text}
+    const review = {restaurantId: cuidFn, id: Math.random(), text: action.review.text}
     return {...state, reviews: [...state.reviews, review]}
     const review = {restaurantId: cuidFn, id: Math.random() text: action.text}
     return {...state, reviews: [...state.reviews: review]}
