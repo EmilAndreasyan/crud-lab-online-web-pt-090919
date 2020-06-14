@@ -4,7 +4,6 @@ export const cuidFn = cuid;
 
 export default function manageRestaurants(state = {restaurants: [], reviews: []}, action) {
   switch(action.type) {
-  switch(action.type)
   case 'ADD_RESTAURANT':
     const restaurant = {id: cuidFn, text: action.text}
     return {...state, restaurants: [...state.restaurants, restaurant]}
