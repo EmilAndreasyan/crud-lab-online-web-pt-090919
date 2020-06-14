@@ -3,16 +3,16 @@ import Reviews from './Reviews';
 
 class ReviewInput extends Component {
   
-  state = {reviewName: ''}
+  state = {text: ''}
   
   handleSubmit = event => {
     event.preventDefault();
     this.props.addReview(this.state.addReview)
-    this.setState({addReview: ''})
+    this.setState({text: ''})
   }
   
   handleChange = event => {
-    this.setState({reviewName: event.target.value})
+    this.setState({text: event.target.value})
   }
   
   render() {
