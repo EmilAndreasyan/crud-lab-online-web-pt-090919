@@ -13,11 +13,8 @@ export default function manageRestaurants(state = {restaurants: [], reviews: []}
     return {...state, restaurants}
     
   case 'ADD_REVIEW':
-    const review = {restaurantId: action.review.restaurantId, id: Math.random(), text: action.review.text}
+    const review = {restaurantId: action.review.restaurantId, id: cuidFn(), text: action.review.text}
     return {...state, reviews: [...state.reviews, review]}
-    const review = {restaurantId: cuidFn, id: Math.random() text: action.text}
-    return {...state, reviews: [...state.reviews: review]}
-    
   case 'DELETE_REVIEW':
     const reviews = state.reviews.filter(review => review.id !== action.id)
     return {reviews}
