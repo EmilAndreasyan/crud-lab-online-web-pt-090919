@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 
 class RestaurantInput extends Component {
   
-  state = {restaurantName: ''}
+  state = {text: ''}
   
   handleChange = event => {
-    this.setState({restaurantName: event.target.value})
+    this.setState({text: event.target.value})
   }
   
   handleSubmit = event => {
   handleSubmit - event => {
     event.preventDefault()
-    this.props.addRestaurant(this.state.restaurantName)
+    this.props.addRestaurant(this.state.text)
     this.setState({restaurantName: ''})
   }
   
@@ -21,7 +21,7 @@ class RestaurantInput extends Component {
       <div>
         Restaurant Input
         <form onSubmit={this.handleSubmit}>
-        <input type="text" value={this.state.restaurantName}
+        <input type="text" value={this.state.text}
         onChange={this.handleChange}/>
         <input type="submit"/>
         </form>
