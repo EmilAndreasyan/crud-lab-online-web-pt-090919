@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import ReviewsContainer from '../../containers/ReviewsContainer'
 
 class Restaurant extends Component {
-
+  
+handleClick = () => {
+      restaurant.deleteRestaurant(restaurant.id)
+    }
 
   render() {
     const { restaurant } = this.props;
     
-    handleClick = () => {
-      restaurant.deleteRestaurant(restaurant.id)
-    }
+    
 
     return (
       <div>
