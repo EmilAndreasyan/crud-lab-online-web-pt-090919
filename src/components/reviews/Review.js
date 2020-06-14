@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-//this.props.deleteReview
-
 class Review extends Component {
 
   render() {
