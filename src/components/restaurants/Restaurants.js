@@ -7,7 +7,7 @@ class Restaurants extends Component {
     const restaurantList = restaurants.map(restaurant => { return (<Restaurant key={restaurant.id} restaurant={restaurant} deleteRestaurant={deleteRestaurant}/>)})
     return(
       <ul>
-        {restaurants}
+        {restaurantList}
       </ul>
     );
   }
