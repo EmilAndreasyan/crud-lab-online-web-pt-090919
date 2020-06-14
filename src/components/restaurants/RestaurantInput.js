@@ -9,7 +9,11 @@ class RestaurantInput extends Component {
     this.setState({restaurantName: event.target.value})
   }
   
+<<<<<<< HEAD
   handleSubmit = event => {
+=======
+  handleSubmit - event => {
+>>>>>>> d40d2ae5a2ad053e6eb253c27abaf29fbbefb974
     event.preventDefault()
     this.props.addRestaurant(this.state.restaurantName)
     this.setState({restaurantName: ''})
