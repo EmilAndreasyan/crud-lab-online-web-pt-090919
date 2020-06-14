@@ -13,7 +13,7 @@ class RestaurantInput extends Component {
   handleSubmit - event => {
     event.preventDefault()
     this.props.addRestaurant(this.state.text)
-    this.setState({restaurantName: ''})
+    this.setState({text: ''})
   }
   
   render() {
